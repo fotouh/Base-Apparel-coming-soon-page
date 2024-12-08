@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+body {
+  font-family: "Josefin Sans", sans-serif;
+  background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%)), linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 25%;
+}
+main img[alt=Logo] {
+  width: 30%;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 5%;
+}
+main img[alt=Mobile] {
+  width: 100%;
+}
+main h1 {
+  text-align: center;
+  font-weight: 200;
+  font-size: 48px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  color: hsl(0, 36%, 70%);
+}
+main h1 span {
+  color: #000;
+  font-weight: 400;
+}
+main p {
+  font-size: 16px;
+  line-height: 20px;
+  color: hsl(0, 36%, 70%);
+  text-align: center;
+  padding: 0 5%;
+}
+main div {
+  width: 80%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 7%;
+}
+main div p {
+  position: absolute;
+  font-size: 16px;
+  left: 5%;
+  text-transform: lowercase;
+  color: hsl(0, 93%, 68%);
+  top: 80%;
+}
+main div span {
+  position: absolute;
+  right: 85px;
+  top: 50%;
+  display: inline-block;
+  transform: translateY(-50%);
+  background-image: url("../images/icon-error.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+main div input {
+  color: #000;
+  outline: none;
+  border: 1px solid hsl(0, 93%, 68%);
+  width: 100%;
+  padding: 12px;
+  border-radius: 25px;
+}
+main div input::-moz-placeholder {
+  text-align: left;
+  padding-left: 15px;
+}
+main div input::placeholder {
+  text-align: left;
+  padding-left: 15px;
+}
+main button {
+  position: absolute;
+  right: -2%;
+  border: none;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+  border-radius: 25px;
+  color: #fff;
+  background-color: hsl(0, 93%, 68%);
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  background-image: url(/images/icon-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+main button:hover {
+  cursor: pointer;
+  background-color: hsl(0, 36%, 70%);
+}
+
+@media screen and (min-width: 767px) {
+  body {
+    background-image: url("../images/bg-pattern-desktop.svg");
+    background-repeat: round;
+  }
+  main {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto 42%;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "logo girl" "h1 girl" "para girl" "div girl";
+    padding-bottom: 0;
+  }
+  main img[alt=Logo] {
+    height: 2rem;
+    width: auto;
+    grid-area: logo;
+    padding: 0;
+    padding-top: 5%;
+    padding-left: 15%;
+  }
+  main picture {
+    grid-area: girl;
+  }
+  main picture img {
+    height: 100%;
+  }
+  main h1 {
+    grid-area: h1;
+    place-self: start;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 2%;
+    padding-left: 15%;
+    font-size: 80px;
+    text-align: left;
+  }
+  main p {
+    grid-area: para;
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+    line-height: 1.5;
+    align-self: start;
+    padding: 0 15%;
+    padding-bottom: 5%;
+    text-align: left;
+  }
+  main div {
+    place-self: start;
+    grid-area: div;
+    padding: 0;
+    margin: 0 15%;
+    width: 65%;
+  }
+  main div p {
+    left: -13%;
+    top: 120%;
+  }
+}/*# sourceMappingURL=Main.css.map */
